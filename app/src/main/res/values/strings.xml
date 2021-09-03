@@ -1,0 +1,119 @@
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<resources>
+    <string name="app_name">Pregnancy Tracker</string>
+
+    <string name="text_button_sign_in_with_huawei">Sign in with Huawei ID</string>
+    <string name="text_button_continue">Continue</string>
+    <string name="text_button_view_3d">View 3D</string>
+    <string name="text_dialog_description_delete">Are you sure to delete?</string>
+    <string name="text_dialog_button_yes">Yes</string>
+    <string name="text_dialog_button_no">No</string>
+    <string name="text_toast_email_error">Please provide email address from Huawei sign-in page to continue.</string>
+    <string name="text_toast_empty_field_error">Please enter all required values.</string>
+    <string name="text_toast_operation_successful">Operation successful</string>
+    <string name="text_toast_unexpected_error">An unexpected error has occurred. Please try again.</string>
+    <string name="text_toast_photo_save_error">The picture you selected is not useable. Please select another and try again.</string>
+    <string name="text_toast_iap_area_not_supported">Your area is not supported for purchase.</string>
+    <string name="text_toast_iap_cancel">Your purchase request is cancelled.</string>
+    <string name="text_toast_iap_consume_successful">Your consume request is completed successfully.</string>
+    <string name="text_button_save">Save</string>
+    <string name="text_button_update">Update</string>
+    <string name="text_button_delete">Delete</string>
+    <string name="text_dialog_title_delete">Delete</string>
+    <string name="text_enter_date">Please set your baby\'s estimated date of birth or the first day of your last period.</string>
+    <string name="text_baby_estimated_birth_date">Your baby\'s estimated date of birth</string>
+    <string name="text_last_period_date">First day of your last period</string>
+    <string name="text_no_diary">No diary</string>
+    <string name="text_diary_title">Diary Title</string>
+    <string name="text_diary">Diary</string>
+    <string name="text_diaries">Diaries</string>
+    <string name="text_diary_details">Diary Details</string>
+    <string name="text_create_date">Create Date:</string>
+    <string name="text_last_update_date">Last Update Date:</string>
+    <string name="text_add_diary">Add Diary</string>
+    <string name="text_add_contact">Add Contact</string>
+    <string name="text_mood">Mood</string>
+    <string name="text_image">Image</string>
+    <string name="text_note">Note</string>
+    <string name="text_ultrasound">Ultrasound</string>
+    <string name="text_memory">Memory Title</string>
+    <string name="text_your_baby">Your baby</string>
+    <string name="text_your_life">Your life</string>
+    <string name="text_week">Week</string>
+    <string name="text_day">Day</string>
+    <string name="text_trimester">Trimester</string>
+    <string name="text_view_all_weeks">View All Weeks</string>
+    <string name="text_weekly_information">Weekly Information</string>
+    <string name="text_baby_size">Your baby is the size of %1$s</string>
+    <string name="text_too_early">Too early for size :)</string>
+    <plurals name="text_remaining_days">
+        <item quantity="zero">Last day :)</item>
+        <item quantity="one">Countdown %d day</item>
+        <item quantity="other">Countdown %d days</item>
+    </plurals>
+
+    <string name="text_no_notification_settings">No notification\nsettings</string>
+    <string name="text_notification_settings">Notification Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="text_image_details">Image Details</string>
+    <string name="text_image_filter">Filter Images</string>
+    <string name="text_image_crop">Crop Images</string>
+    <string name="text_image_sticker">Add Stickers</string>
+    <string name="text_image_edit">Edit Images</string>
+    <string name="text_image_memory">Memory</string>
+    <string name="text_fonts_sticker">Name</string>
+    <string name="text_sticker_deleteall">Delete All</string>
+    <string name="text_filter">Filter</string>
+    <string name="text_memory_title">Memory Title</string>
+    <string name="text_save_phone">Save to Phone</string>
+    <string name="text_pharmacy">PHARMACY</string>
+    <string name="text_switch_button">Switch for hospitals</string>
+    <string name="text_add_memory">Add Memory</string>
+    <string name="text_button_edit">Edit</string>
+    <string name="text_crop">Crop</string>
+    <string name="text_sticker">Sticker</string>
+    <string name="text_rectangle">rectangle</string>
+    <string name="text_circular">circular</string>
+    <string name="text_rotate">Rotate</string>
+    <string name="text_flipV">FlipV</string>
+    <string name="text_flipH">FlipH</string>
+    <string name="text_contact">Contact</string>
+    <string name="text_contact_detail">Contact Details</string>
+    <string name="text_number">Number</string>
+    <string name="text_name_surname">Name/Surname</string>
+    <string name="text_sample_filter">Sample Filter</string>
+    <string name="text_no_contact">No Contact</string>
+    <string name="text_contacts">Contacts</string>
+    <string name="text_call">Call</string>
+    <string name="text_direction">Open on Map</string>
+
+
+
+
+
+
+    <string name="urlToken">https://login.cloud.huawei.com/oauth2/v2/token</string>
+
+</resources>

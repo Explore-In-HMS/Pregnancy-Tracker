@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fragments.PhotoEditFragment">
+    <androidx.cardview.widget.CardView
+       android:id="@+id/filtercardview"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:cardElevation="@dimen/elevation_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="@dimen/size_medium"
+        android:layout_height="@dimen/size_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_container_small"
+        android:src="@drawable/icon_back"
+        android:scaleType="centerInside"
+        android:background="@null"        />
+
+    <ImageButton
+        android:id="@+id/okbttn"
+        android:layout_width="@dimen/size_medium"
+        android:layout_height="@dimen/size_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_container_small"
+        android:src="@drawable/check"
+        android:scaleType="centerInside"
+        android:background="@null"
+
+        />
+    <com.team7.pregnancytracker.widgets.PregnancyAppTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/backbtn"
+        app:layout_constraintEnd_toStartOf="@id/okbttn"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="@string/text_image_filter">
+
+    </com.team7.pregnancytracker.widgets.PregnancyAppTextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+        <ImageView
+            android:id="@+id/loadedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:contentDescription="Selected Image"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filterName"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loadedImageView"
+            app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/filterName"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="@dimen/margin_container_small"
+        android:gravity="center"
+        android:text="@string/text_filter"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filtercardview" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

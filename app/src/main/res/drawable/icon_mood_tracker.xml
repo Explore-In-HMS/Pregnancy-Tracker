@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <path
+        android:fillColor="#ffd959"
+        android:pathData="M271 30v295l15 15-15 15v157c133.101 0 241-107.899 241-241s-107.899-241-241-241z" />
+    <path
+        android:fillColor="#ffeaa6"
+        android:pathData="M0 241c0 133.101 107.899 241 241 241v-90l-60-83 60-83v-226c-133.101 0-241 107.899-241 241z" />
+    <path
+        android:fillColor="#62676f"
+        android:pathData="M106 151h90v30h-90z" />
+    <path
+        android:fillColor="#ff9d7d"
+        android:pathData="M241 226v65.96l-118.772 50.031c-29.221-29.924-47.228-70.852-47.228-115.991z" />
+    <path
+        android:fillColor="#ff5253"
+        android:pathData="M241 291.96v100.04c-46.546 0-88.618-19.15-118.772-50.009 30.143-30.858 72.226-50.031 118.772-50.031z" />
+    <path
+        android:fillColor="#414851"
+        android:pathData="M346 205v45c0 16.569 13.431 30 30 30s30-13.431 30-30v-45c0-16.569-13.431-30-30-30s-30 13.431-30 30z" />
+    <path
+        android:fillColor="#ffc40f"
+        android:pathData="M271 325h90v30h-90z" />
+</vector>

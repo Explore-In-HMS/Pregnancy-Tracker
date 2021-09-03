@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DiaryFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_header"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/elevation_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_container_xsmall">
+
+            <com.team7.pregnancytracker.widgets.PregnancyAppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_diaries"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_diary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view_header" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_no_diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view_header">
+
+        <ImageView
+            android:id="@+id/image_view_icon"
+            android:layout_width="@dimen/size_large"
+            android:layout_height="@dimen/size_large"
+            android:src="@drawable/icon_diary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorAccent" />
+
+        <com.team7.pregnancytracker.widgets.PregnancyAppTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_container_large"
+            android:text="@string/text_no_diary"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_xlarge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_view_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_add_mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_add_diary"
+        app:layout_constraintEnd_toEndOf="@+id/fab_add_diary">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_add_mood_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_container_xxsmall"
+            android:padding="@dimen/padding_container_small"
+            app:cardCornerRadius="@dimen/radius_large"
+            app:cardElevation="@dimen/elevation_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/size_xxmedium"
+                android:layout_height="@dimen/size_xxmedium"
+                android:layout_margin="@dimen/margin_container_xsmall"
+                android:src="@drawable/icon_mood_tracker" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_add_mood_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_container_small"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/radius_medium"
+            app:cardElevation="@dimen/elevation_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/card_view_add_mood_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.team7.pregnancytracker.widgets.PregnancyAppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_container_small"
+                android:paddingTop="@dimen/padding_container_xxsmall"
+                android:paddingEnd="@dimen/padding_container_small"
+                android:paddingBottom="@dimen/padding_container_xxsmall"
+                android:text="@string/text_mood"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_add_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_add_diary"
+        app:layout_constraintEnd_toEndOf="@+id/fab_add_diary">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_add_image_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_container_xxsmall"
+            android:padding="@dimen/padding_container_small"
+            app:cardCornerRadius="@dimen/radius_large"
+            app:cardElevation="@dimen/elevation_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/size_xxmedium"
+                android:layout_height="@dimen/size_xxmedium"
+                android:layout_margin="@dimen/margin_container_xsmall"
+                android:src="@drawable/icon_image" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_add_image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_container_small"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/radius_medium"
+            app:cardElevation="@dimen/elevation_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/card_view_add_image_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.team7.pregnancytracker.widgets.PregnancyAppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_container_small"
+                android:paddingTop="@dimen/padding_container_xxsmall"
+                android:paddingEnd="@dimen/padding_container_small"
+                android:paddingBottom="@dimen/padding_container_xxsmall"
+                android:text="@string/text_image"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_add_diary"
+        app:layout_constraintEnd_toEndOf="@+id/fab_add_diary">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_add_note_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_container_xxsmall"
+            android:padding="@dimen/padding_container_small"
+            app:cardCornerRadius="@dimen/radius_large"
+            app:cardElevation="@dimen/elevation_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/size_xxmedium"
+                android:layout_height="@dimen/size_xxmedium"
+                android:layout_margin="@dimen/margin_container_xsmall"
+                android:src="@drawable/icon_note" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_add_note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_container_small"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/radius_medium"
+            app:cardElevation="@dimen/elevation_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/card_view_add_note_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.team7.pregnancytracker.widgets.PregnancyAppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_container_small"
+                android:paddingTop="@dimen/padding_container_xxsmall"
+                android:paddingEnd="@dimen/padding_container_small"
+                android:paddingBottom="@dimen/padding_container_xxsmall"
+                android:text="@string/text_note"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_add_ultrasound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_add_diary"
+        app:layout_constraintEnd_toEndOf="@+id/fab_add_diary">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_add_ultrasound_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_container_xxsmall"
+            android:padding="@dimen/padding_container_small"
+            app:cardCornerRadius="@dimen/radius_large"
+            app:cardElevation="@dimen/elevation_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/size_xxmedium"
+                android:layout_height="@dimen/size_xxmedium"
+                android:layout_margin="@dimen/margin_container_xsmall"
+                android:src="@drawable/icon_ultrasound" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_add_ultrasound_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_container_small"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/radius_medium"
+            app:cardElevation="@dimen/elevation_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/card_view_add_ultrasound_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.team7.pregnancytracker.widgets.PregnancyAppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_container_small"
+                android:paddingTop="@dimen/padding_container_xxsmall"
+                android:paddingEnd="@dimen/padding_container_small"
+                android:paddingBottom="@dimen/padding_container_xxsmall"
+                android:text="@string/text_ultrasound"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_add_diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_container_medium"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/text_add_diary"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small"
+        app:cornerRadius="@dimen/radius_large"
+        app:elevation="@dimen/elevation_small"
+        app:icon="@drawable/icon_plus"
+        app:iconSize="@dimen/size_small"
+        app:iconTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

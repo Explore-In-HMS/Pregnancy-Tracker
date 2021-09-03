@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.StickerDetailFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/filtercardview"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardElevation="@dimen/elevation_small">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="@dimen/size_medium"
+                android:layout_height="@dimen/size_medium"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/margin_container_small"
+                android:src="@drawable/icon_back"
+                android:scaleType="centerInside"
+                android:background="@null"        />
+
+            <ImageButton
+                android:id="@+id/okbttn"
+                android:layout_width="@dimen/size_medium"
+                android:layout_height="@dimen/size_medium"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin_container_small"
+                android:src="@drawable/check"
+                android:scaleType="centerInside"
+                android:background="@null"
+
+                />
+            <com.team7.pregnancytracker.widgets.PregnancyAppTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/backbtn"
+                app:layout_constraintEnd_toStartOf="@id/okbttn"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="@string/text_image_sticker">
+
+            </com.team7.pregnancytracker.widgets.PregnancyAppTextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/sticker_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.55"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:id="@+id/imgPhotosticker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/colosseum" />
+
+        <com.huawei.hms.image.vision.sticker.StickerLayout
+            android:id="@+id/sticker_container"
+            android:layout_width="wrap_content"
+            android:layout_height="295dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.20"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp">
+
+
+        <EditText
+            android:id="@+id/fonts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/text_fonts_sticker" />
+        <Button
+            android:id="@+id/btn_removeSticks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fonts"
+            android:layout_alignParentBottom="true"
+            android:text="@string/text_sticker_deleteall" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.25">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListSticker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loadedImageView"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

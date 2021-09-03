@@ -1,0 +1,35 @@
+{
+	"agcgw":{
+		"backurl":"connect-dre.dbankcloud.cn",
+		"url":"connect-dre.hispace.hicloud.com"
+	},
+	"client":{
+		"appType":"1",
+		"cp_id":"570090000023107733",
+		"product_id":"736430079244762670",
+		"client_id":"528218574091727488",
+		"client_secret":"4729BF80ECA23784A6AF2DAE15AA3D274E270D8293583EA5071963E6DDC797B6",
+		"project_id":"736430079244762670",
+		"app_id":"103585075",
+		"api_key":"CgB6e3x9nhUqZMpZ8E/T+bl+YzR3NvXOvovrpAMcHh2mMw0arupdLG4t9ajJc3DFQ/Ms2oSP+uMy/l4/MKRoZ7nH",
+		"package_name":"com.team7.pregnancytracker"
+	},
+	"service":{
+		"analytics":{
+			"collector_url":"datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn",
+			"resource_id":"p1",
+			"channel_id":""
+		},
+		"search":{
+			"url":"https://search-dre.cloud.huawei.com"
+		},
+		"cloudstorage":{
+			"storage_url":"https://ops-dre.agcstorage.link"
+		},
+		"ml":{
+			"mlservice_url":"ml-api-dre.ai.dbankcloud.com,ml-api-dre.ai.dbankcloud.cn"
+		}
+	},
+	"region":"DE",
+	"configuration_version":"1.0"
+}

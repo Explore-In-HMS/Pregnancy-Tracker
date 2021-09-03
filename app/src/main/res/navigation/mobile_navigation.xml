@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.team7.pregnancytracker.fragments.PregnancyFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_pregnancy">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_diary"
+        android:name="com.team7.pregnancytracker.fragments.DiaryFragment"
+        android:label="@string/text_diary"
+        tools:layout="@layout/fragment_diary" >
+        <action
+            android:id="@+id/action_navigation_diary_to_navigation_diary_details"
+            app:destination="@id/navigation_diary_details"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_navigation_diary_to_navigation_image_details"
+            app:destination="@id/navigation_image_details" />
+        <action
+            android:id="@+id/action_navigation_diary_to_navigation_memory_detail"
+            app:destination="@id/navigation_memory_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.team7.pregnancytracker.fragments.MapFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="com.team7.pregnancytracker.fragments.ContactFragment"
+        android:label="Contacts"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_navigation_contact_to_navigation_contact_detail"
+            app:destination="@id/navigation_contact_detail" />
+        <action
+            android:id="@+id/action_navigation_contact_to_navigation_contact_info_detail"
+            app:destination="@id/navigation_contact_info_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_diary_details"
+        android:name="com.team7.pregnancytracker.fragments.DiaryDetailFragment"
+        android:label="@string/text_diary_details"
+        tools:layout="@layout/fragment_diary_details" >
+        <action
+            android:id="@+id/action_navigation_diary_details_self"
+            app:destination="@id/navigation_diary_details"
+            app:launchSingleTop="true"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_image_details"
+        android:name="com.team7.pregnancytracker.fragments.ImageEditorFragment"
+        android:label="@string/text_image_details"
+        tools:layout="@layout/fragment_image_editor" >
+        <action
+            android:id="@+id/action_navigation_image_details_to_navigation_image_edit"
+            app:destination="@id/navigation_image_edit" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_image_edit"
+        android:name="com.team7.pregnancytracker.fragments.EditDetailFragment"
+        android:label="@string/text_image_details"
+        tools:layout="@layout/fragment_edit_detail" >
+        <action
+            android:id="@+id/action_navigation_image_edit_to_navigation_image_filter"
+            app:destination="@id/navigation_image_filter" />
+        <action
+            android:id="@+id/action_navigation_image_edit_to_navigation_image_crop"
+            app:destination="@id/navigation_image_crop" />
+        <action
+            android:id="@+id/action_navigation_image_edit_to_navigation_image_sticker"
+            app:destination="@id/navigation_image_sticker" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_image_filter"
+        android:name="com.team7.pregnancytracker.fragments.PhotoEditFragment"
+        android:label="@string/text_image_details"
+        tools:layout="@layout/fragment_photo_edit" />
+    <fragment
+        android:id="@+id/navigation_image_crop"
+        android:name="com.team7.pregnancytracker.fragments.CropDetailFragment"
+        android:label="@string/text_image_details"
+        tools:layout="@layout/fragment_crop_detail" />
+    <fragment
+        android:id="@+id/navigation_image_sticker"
+        android:name="com.team7.pregnancytracker.fragments.StickerDetailFragment"
+        android:label="@string/text_image_details"
+        tools:layout="@layout/fragment_sticker_detail" />
+    <fragment
+        android:id="@+id/navigation_memory_detail"
+        android:name="com.team7.pregnancytracker.fragments.MemoryDetailFragment"
+        android:label="@string/text_image_details"
+        tools:layout="@layout/fragment_memory_detail" />
+    <fragment
+        android:id="@+id/navigation_contact_detail"
+        android:name="com.team7.pregnancytracker.fragments.ContactDetailFragment"
+        android:label="@string/text_image_details"
+        tools:layout="@layout/fragment_contact_detail" />
+    <fragment
+        android:id="@+id/navigation_contact_info_detail"
+        android:name="com.team7.pregnancytracker.fragments.ContactInfoFragment"
+        android:label="@string/text_image_details"
+        tools:layout="@layout/fragment_contact_info" />
+
+    <fragment
+        android:id="@+id/navigation_notification_settings"
+        android:name="com.team7.pregnancytracker.fragments.NotificationSettingsFragment"
+        android:label="@string/text_notification_settings"
+        tools:layout="@layout/fragment_notification_settings" />
+
+</navigation>

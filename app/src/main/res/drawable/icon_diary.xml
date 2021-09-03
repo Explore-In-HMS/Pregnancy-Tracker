@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <path
+        android:fillColor="#000000"
+        android:pathData="M83.478,0C55.859,0,33.391,22.468,33.391,50.087v38.957H16.696C7.479,89.044,0,96.516,0,105.739 s7.479,16.696,16.696,16.696h16.696v66.783H16.696C7.479,189.217,0,196.69,0,205.913c0,9.223,7.479,16.696,16.696,16.696h16.696 v66.783H16.696C7.479,289.391,0,296.864,0,306.087c0,9.223,7.479,16.696,16.696,16.696h16.696v66.783H16.696 C7.479,389.565,0,397.038,0,406.261s7.479,16.696,16.696,16.696h16.696v38.956c0,27.619,22.468,50.087,50.087,50.087h50.087V0 H83.478z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M461.913,0H166.957v512h294.956C489.532,512,512,489.532,512,461.913V50.087C512,22.468,489.532,0,461.913,0z M332.711,386.921c-5.747,4.815-14.109,4.815-19.856,0c-57.868-48.489-96.137-71.927-96.137-112.03 c0-31.924,23.294-56.934,53.032-56.934c16.13,0,29.174,6.653,39.88,20.342l13.152,16.827l13.152-16.826 c10.706-13.69,23.75-20.342,39.88-20.342c29.739,0,53.032,25.011,53.032,56.934C428.848,315.012,390.59,338.423,332.711,386.921z M428.522,122.435H217.043c-9.217,0-16.696-7.473-16.696-16.696s7.479-16.696,16.696-16.696h211.478 c9.217,0,16.696,7.473,16.696,16.696S437.739,122.435,428.522,122.435z" />
+
+</vector>

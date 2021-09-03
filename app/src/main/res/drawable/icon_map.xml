@@ -1,0 +1,41 @@
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="500.004dp"
+    android:height="500.004dp"
+    android:viewportWidth="500.004"
+    android:viewportHeight="500.004">
+
+    <group
+        android:translateX="-3"
+        android:translateY="-100">
+
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="m266.606,241.559c-5.857,5.858 -15.355,5.858 -21.213,0 -7.694,-7.693 -17.8,-11.54 -27.906,-11.54 -10.105,0 -20.211,3.847 -27.905,11.54 -15.387,15.387 -15.387,40.424 0,55.811l66.418,66.417 66.417,-66.417c15.387,-15.387 15.387,-40.424 0,-55.811 -15.388,-15.388 -40.423,-15.387 -55.811,0z" />
+
+    </group>
+
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M250.002,0C144.234,0 58.178,86.052 58.178,191.824c0,192.292 187.924,306.496 189.824,307.628c0.612,0.368 1.308,0.552 2,0.552s1.388,-0.184 2,-0.552c1.9,-1.132 189.824,-115.332 189.824,-307.628C441.822,86.052 355.77,0 250.002,0zM250.002,321.664c-71.592,0 -129.84,-58.248 -129.84,-129.84c0,-71.6 58.248,-129.84 129.84,-129.84s129.836,58.244 129.836,129.84C379.838,263.416 321.594,321.664 250.002,321.664z" />
+
+</vector>

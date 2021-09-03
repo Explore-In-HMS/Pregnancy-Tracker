@@ -1,0 +1,29 @@
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<vector android:height="40dp" android:viewportHeight="225.566"
+    android:viewportWidth="225.566" android:width="40dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#010002" android:pathData="M41.05,48.659m-15.72,0a15.72,15.72 0,1 1,31.44 0a15.72,15.72 0,1 1,-31.44 0"/>
+    <path android:fillColor="#010002" android:pathData="M93.65,48.659m-15.72,0a15.72,15.72 0,1 1,31.44 0a15.72,15.72 0,1 1,-31.44 0"/>
+    <path android:fillColor="#010002" android:pathData="M41.05,97.881m-15.72,0a15.72,15.72 0,1 1,31.44 0a15.72,15.72 0,1 1,-31.44 0"/>
+    <path android:fillColor="#010002" android:pathData="M93.65,97.881m-15.72,0a15.72,15.72 0,1 1,31.44 0a15.72,15.72 0,1 1,-31.44 0"/>
+    <path android:fillColor="#010002" android:pathData="M41.05,146.736m-15.72,0a15.72,15.72 0,1 1,31.44 0a15.72,15.72 0,1 1,-31.44 0"/>
+    <path android:fillColor="#010002" android:pathData="M188.659,153.983h-55.063V0H1.093v195.385H74c2.718,17.063 17.414,30.181 35.228,30.181h79.432c19.756,0 35.813,-16.054 35.813,-35.8C224.472,170.031 208.411,153.983 188.659,153.983zM7.84,6.742h119.032v147.247h-17.645c-0.627,0 -1.206,0.135 -1.816,0.171c1.212,-2.205 1.975,-4.729 1.975,-7.425c0,-8.687 -7.038,-15.722 -15.736,-15.722c-8.68,0 -15.73,7.035 -15.73,15.722c0,6.604 4.102,12.233 9.865,14.56c-8.376,6.318 -13.896,16.155 -14.247,27.361H7.839V6.742H7.84zM109.228,218.826c-16.029,0 -29.056,-13.033 -29.056,-29.07c0,-16.011 13.027,-29.043 29.056,-29.043h37.159l0.058,58.113H109.228z"/>
+</vector>

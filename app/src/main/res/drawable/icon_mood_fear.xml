@@ -1,0 +1,55 @@
+<!--
+  ~ /**
+  ~  *Copyright 2020. Explore in HMS. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  ~
+  ~  */
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <group
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        android:translateX="-100"
+        android:translateY="-100">
+
+        <path
+            android:fillColor="#FED940"
+            android:pathData="M435.922 256A179.923 179.923 0 0 1 76.076 256A179.923 179.923 0 0 1 435.922 256Z" />
+        <path
+            android:fillColor="#FFC024"
+            android:pathData="M435.923 256c0 99.367 -80.557 179.924 -179.924 179.924v-359.848c99.368 0 179.924 80.557 179.924 179.924z" />
+        <path
+            android:fillColor="#7F6866"
+            android:pathData="M180.056 337.996l-44.959 -23.682 13.983 -26.543 30.976 16.317 37.968 -20 37.971 20 37.969 -19.999 37.973 20 30.984 -16.318 13.98 26.543 -44.964 23.681 -37.973 -20 -37.969 20.001 -37.971 -20z" />
+        <path
+            android:fillColor="#634C4C"
+            android:pathData="M376.9 314.31l-44.96 23.69 -37.98 -20 -37.96 19.99v-33.91l37.96 -19.99 37.98 20 30.98 -16.32z" />
+        <path
+            android:fillColor="#7F6866"
+            android:pathData="M165.371 237.621l-17.098 -24.652 34.562 -23.969 -34.562 -23.969 17.098 -24.652 70.104 48.621z" />
+        <path
+            android:fillColor="#634C4C"
+            android:pathData="M346.628 237.621l17.097 -24.652 -34.561 -23.969 34.561 -23.969 -17.097 -24.652 -70.105 48.621z" />
+
+    </group>
+
+</vector>
