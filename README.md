@@ -178,25 +178,12 @@ To ensure stable running of your app and prevent user experience deterioration c
 
 ### Libraries
 
-- Huawei ML Kit
-- Huawei Account Kit
-- Huawei Map Kit
-- Huawei Location Kit
-- Huawei Site Kit
-- Huawei Image Kit
-- Huawei Push Kit
-- Huawei Panorama Kit
-- Huawei IAP
-- Huawei Remote Configuration
-- Huawei Analytics Kit
-- Huawei Crash Service
-- Navigation
-- Kotlin Coroutines
-- Room DB
-- Retrofit
-- Gson
-- Material Components
-- Cardview
+- [Android Navigation ](https://developer.android.com/jetpack/androidx/releases/navigation)
+- [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)
+- [Room DB ](https://developer.android.com/jetpack/androidx/releases/room?gclid=EAIaIQobChMIrY-c_YCD8wIVFud3Ch13FAO4EAAYASAAEgKwmfD_BwE&gclsrc=aw.ds)
+- [Retrofit ](https://github.com/square/retrofit)
+- [Google Gson](https://github.com/google/gson)
+- [Android Cardview ](https://developer.android.com/guide/topics/ui/layout/cardview)
 
 ## Contributors
 - Kübra Kızılca
